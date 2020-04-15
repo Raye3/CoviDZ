@@ -1,4 +1,4 @@
-# covid
+# CoviDZ - covid-19 tracker
 
 ## Project setup
 ```
