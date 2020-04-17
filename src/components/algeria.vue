@@ -31,7 +31,6 @@
         </v-col>        
       </v-row>
       <v-data-table
-        dark
         :headers="headers"
         :items="items"
         class="elevation-1 my-5 py-5"
@@ -44,7 +43,7 @@
         hide-default-footer=""
       >
         <template v-slot:top>
-          <v-text-field outlined v-model="search" label="Search by country name" class="mx-4"></v-text-field>
+          <v-text-field outlined v-model="search" label="Search by Wilaya name" class="mx-4"></v-text-field>
         </template>
 
       </v-data-table>
@@ -58,8 +57,8 @@ export default {
     return {
       headers: [
         { text: "Wilaya", align: "left", value: "region" },
-        { text: "Cases", align: "center", value: "value" },
-        { text: "new Cases", align: "center", value: "newly" },
+        { text: "Cases", align: "left", value: "value" },
+        { text: "New Cases", align: "left", value: "newly" },
       ],
       items: [],
       loadingStat: true,

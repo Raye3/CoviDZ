@@ -8,6 +8,7 @@ import Home from './views/home'
 Vue.use(VueRouter);
 
 export default new VueRouter({
+  mode : 'history',
   routes: [
     {
       path: "/",
